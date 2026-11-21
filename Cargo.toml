@@ -1,0 +1,32 @@
+[workspace]
+members = [
+    "crates/mixin-sdk", "crates/mixin-macros", "crates/mixin-runtime", "crates/mixin-cli",
+    "examples/video-game", "examples/mods/video-before", "examples/mods/video-inside", "examples/mods/video-after",
+    "tests/fixtures/combat-game", "tests/fixtures/embedded-game", "tests/fixtures/loot-host",
+    "tests/fixtures/scalar-game", "tests/fixtures/return-types", "tests/fixtures/mods/*",
+    "tools/mixin-bench", "tools/demo-build",
+]
+default-members = ["crates/mixin-sdk", "crates/mixin-macros", "crates/mixin-runtime", "crates/mixin-cli"]
+resolver = "2"
+
+[workspace.metadata.video-demo]
+# 游戏和模组的默认输出目录。相对路径以本 Cargo.toml 所在目录为基准。
+# 可用 --output 指定本次构建的目录。
+output-directory = "target/video-demo"
+
+# embedded 将原版 bitcode 和校验清单嵌入 video-game.exe。
+# external 将两份文件放到输出目录下的 artifacts/video-demo/。
+# 可用 cargo build-game --bitcode embedded 或 external 覆盖。
+bitcode = "embedded"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+overflow-checks = false
+
+[profile.video-demo]
+inherits = "release"
+panic = "unwind"
+lto = false

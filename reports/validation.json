@@ -1,0 +1,198 @@
+{
+  "schema": 1,
+  "manifest": {
+    "schema": 1,
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)\nbinary: rustc\ncommit-hash: ded5c06cf21d2b93bffd5d884aa6e96934ee4234\ncommit-date: 2025-12-08\nhost: x86_64-pc-windows-msvc\nrelease: 1.92.0\nLLVM version: 21.1.3",
+    "llvm": [
+      21,
+      1,
+      3
+    ],
+    "triple": "x86_64-pc-windows-msvc",
+    "cpu": "x86-64",
+    "lowering_flags": [
+      "cargo rustc --release",
+      "--emit=llvm-bc,llvm-ir,link",
+      "-Cno-prepopulate-passes",
+      "-Clto=off",
+      "--cfg=mixin_retained",
+      "-Ctarget-cpu=x86-64"
+    ],
+    "inputs": [
+      {
+        "file": "retained_game.bc",
+        "sha256": "61c14b75da104b38d4f9d3a48a8afd6b9296e4628f7009cbca9350487cc6189c"
+      },
+      {
+        "file": "retained_mod.bc",
+        "sha256": "4c2e1149474e8e73c80c581e030a819f723b60dc48ac62dd74495d5d7b5aab14"
+      }
+    ]
+  },
+  "llvm_runtime": [
+    21,
+    1,
+    3
+  ],
+  "dll_bytes": 68580864,
+  "dll_sha256": "b0c250d2440a24b5e130291566bfc7b1ccfb0ded11b96d356d82a0fc189dcb4b",
+  "runner_bytes": 678912,
+  "bitcode_bytes": 13064,
+  "dll_load_initialize_ms": 6.2524,
+  "empty_path": false,
+  "checks": 16502,
+  "base_value": 16.0,
+  "patched_value": 9.5,
+  "base_load_trials": [
+    {
+      "parse_link_ms": 1.5299,
+      "select_patch_ms": 0.078,
+      "optimize_ms": 11.3031,
+      "create_jit_ms": 0.5255000000000001,
+      "materialize_ms": 54.099599999999995,
+      "total_ms": 67.5363
+    },
+    {
+      "parse_link_ms": 4.400399999999999,
+      "select_patch_ms": 0.06830000000000001,
+      "optimize_ms": 12.8833,
+      "create_jit_ms": 0.6008,
+      "materialize_ms": 24.4893,
+      "total_ms": 42.4422
+    },
+    {
+      "parse_link_ms": 0.973,
+      "select_patch_ms": 0.057800000000000004,
+      "optimize_ms": 12.477200000000002,
+      "create_jit_ms": 0.4593,
+      "materialize_ms": 19.765,
+      "total_ms": 33.7323
+    },
+    {
+      "parse_link_ms": 1.2416,
+      "select_patch_ms": 0.0644,
+      "optimize_ms": 12.0755,
+      "create_jit_ms": 0.5418000000000001,
+      "materialize_ms": 13.9357,
+      "total_ms": 27.8591
+    },
+    {
+      "parse_link_ms": 1.5418,
+      "select_patch_ms": 0.06470000000000001,
+      "optimize_ms": 5.329000000000001,
+      "create_jit_ms": 0.31589999999999996,
+      "materialize_ms": 9.0458,
+      "total_ms": 16.2972
+    },
+    {
+      "parse_link_ms": 0.7199,
+      "select_patch_ms": 0.048,
+      "optimize_ms": 5.9942,
+      "create_jit_ms": 0.4215,
+      "materialize_ms": 12.5103,
+      "total_ms": 19.6939
+    },
+    {
+      "parse_link_ms": 0.9118,
+      "select_patch_ms": 0.0596,
+      "optimize_ms": 5.2501,
+      "create_jit_ms": 0.2872,
+      "materialize_ms": 10.406,
+      "total_ms": 16.9147
+    }
+  ],
+  "patched_load_trials": [
+    {
+      "parse_link_ms": 3.4459999999999997,
+      "select_patch_ms": 0.2453,
+      "optimize_ms": 21.648500000000002,
+      "create_jit_ms": 0.475,
+      "materialize_ms": 26.659499999999998,
+      "total_ms": 52.474399999999996
+    },
+    {
+      "parse_link_ms": 0.8217,
+      "select_patch_ms": 0.13699999999999998,
+      "optimize_ms": 8.9371,
+      "create_jit_ms": 0.3502,
+      "materialize_ms": 31.3757,
+      "total_ms": 41.6218
+    },
+    {
+      "parse_link_ms": 1.2493999999999998,
+      "select_patch_ms": 0.3049,
+      "optimize_ms": 9.6343,
+      "create_jit_ms": 1.7385,
+      "materialize_ms": 14.5958,
+      "total_ms": 27.523100000000003
+    },
+    {
+      "parse_link_ms": 1.1888,
+      "select_patch_ms": 0.21509999999999999,
+      "optimize_ms": 10.476299999999998,
+      "create_jit_ms": 0.376,
+      "materialize_ms": 10.575,
+      "total_ms": 22.8313
+    },
+    {
+      "parse_link_ms": 2.1073,
+      "select_patch_ms": 0.1825,
+      "optimize_ms": 6.1024,
+      "create_jit_ms": 0.2664,
+      "materialize_ms": 12.3462,
+      "total_ms": 21.0048
+    },
+    {
+      "parse_link_ms": 0.6436999999999999,
+      "select_patch_ms": 0.1025,
+      "optimize_ms": 7.4573,
+      "create_jit_ms": 0.2382,
+      "materialize_ms": 11.268699999999999,
+      "total_ms": 19.7104
+    },
+    {
+      "parse_link_ms": 1.1537,
+      "select_patch_ms": 0.187,
+      "optimize_ms": 11.0507,
+      "create_jit_ms": 0.40349999999999997,
+      "materialize_ms": 12.1668,
+      "total_ms": 24.9618
+    }
+  ],
+  "base_load_median_ms": 27.8591,
+  "patched_load_median_ms": 24.9618,
+  "memory_before_llvm": {
+    "working_set_bytes": 4767744,
+    "private_bytes": 675840,
+    "peak_working_set_bytes": 4767744
+  },
+  "memory_after_llvm": {
+    "working_set_bytes": 10960896,
+    "private_bytes": 8536064,
+    "peak_working_set_bytes": 10960896
+  },
+  "memory_with_two_jits": {
+    "working_set_bytes": 28798976,
+    "private_bytes": 13172736,
+    "peak_working_set_bytes": 28884992
+  },
+  "memory_after_benchmarks": {
+    "working_set_bytes": 31117312,
+    "private_bytes": 17354752,
+    "peak_working_set_bytes": 31121408
+  },
+  "memory_after_jit_disposal": {
+    "working_set_bytes": 31088640,
+    "private_bytes": 17108992,
+    "peak_working_set_bytes": 31121408
+  },
+  "comparisons": [],
+  "limits": [
+    "Trusted no_std fixture/mod, scalar C boundaries, one OS/CPU, no heap/panic/unwinding/shared state.",
+    "Logical IDs and symbol mappings come from the experimental attribute SDK; only 0..=4 f64 target boundaries are indexed, not arbitrary Rust signatures.",
+    "Calls are synchronous; this experiment has no runtime publication/hot-update protocol.",
+    "DLL timing is this process's first load, not a reboot-cold disk benchmark; load trials reuse warm process/caches.",
+    "AOT uses rustc O3/thin LTO. Retained bitcode bypasses LLVM passes, then LLVM C API runs default<O3>. Pipelines are not identical.",
+    "No performance claim for full games, arbitrary Rust, reference capture, multiplayer or multithreaded workloads."
+  ]
+}

@@ -1,0 +1,327 @@
+{
+  "schema": 1,
+  "manifest": {
+    "schema": 1,
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)\nbinary: rustc\ncommit-hash: ded5c06cf21d2b93bffd5d884aa6e96934ee4234\ncommit-date: 2025-12-08\nhost: x86_64-pc-windows-msvc\nrelease: 1.92.0\nLLVM version: 21.1.3",
+    "llvm": [
+      21,
+      1,
+      3
+    ],
+    "triple": "x86_64-pc-windows-msvc",
+    "cpu": "x86-64",
+    "lowering_flags": [
+      "cargo rustc --release",
+      "--emit=llvm-bc,llvm-ir,link",
+      "-Cno-prepopulate-passes",
+      "-Clto=off",
+      "--cfg=mixin_retained",
+      "-Ctarget-cpu=x86-64"
+    ],
+    "inputs": [
+      {
+        "file": "retained_game.bc",
+        "sha256": "d39142dd0dba7e7fa6625054b0c983e324ab1d8b509998bdfcd675f6bfdb9039"
+      },
+      {
+        "file": "retained_mod.bc",
+        "sha256": "ea02143cf8634adffa9a6f9dc104c816b8e5c2bcb3c08a93d3e95787a9d279ea"
+      }
+    ]
+  },
+  "llvm_runtime": [
+    21,
+    1,
+    3
+  ],
+  "dll_bytes": 68580864,
+  "dll_sha256": "b0c250d2440a24b5e130291566bfc7b1ccfb0ded11b96d356d82a0fc189dcb4b",
+  "runner_bytes": 503296,
+  "bitcode_bytes": 9416,
+  "dll_load_initialize_ms": 37.039500000000004,
+  "empty_path": true,
+  "checks": 16502,
+  "base_value": 16.0,
+  "patched_value": 9.5,
+  "base_load_trials": [
+    {
+      "parse_link_ms": 0.5548000000000001,
+      "select_patch_ms": 0.027299999999999998,
+      "optimize_ms": 2.8027,
+      "create_jit_ms": 0.1437,
+      "materialize_ms": 5.6071,
+      "total_ms": 9.1357
+    },
+    {
+      "parse_link_ms": 0.3772,
+      "select_patch_ms": 0.02,
+      "optimize_ms": 2.7725,
+      "create_jit_ms": 0.1837,
+      "materialize_ms": 5.1724,
+      "total_ms": 8.5258
+    },
+    {
+      "parse_link_ms": 0.36210000000000003,
+      "select_patch_ms": 0.04,
+      "optimize_ms": 3.3718,
+      "create_jit_ms": 0.1651,
+      "materialize_ms": 4.152,
+      "total_ms": 8.0911
+    },
+    {
+      "parse_link_ms": 0.46930000000000005,
+      "select_patch_ms": 0.0307,
+      "optimize_ms": 3.6603,
+      "create_jit_ms": 0.16349999999999998,
+      "materialize_ms": 5.487299999999999,
+      "total_ms": 9.8111
+    },
+    {
+      "parse_link_ms": 0.5646,
+      "select_patch_ms": 0.0322,
+      "optimize_ms": 4.0394000000000005,
+      "create_jit_ms": 0.1614,
+      "materialize_ms": 6.5514,
+      "total_ms": 11.3491
+    },
+    {
+      "parse_link_ms": 0.3779,
+      "select_patch_ms": 0.022699999999999998,
+      "optimize_ms": 4.6699,
+      "create_jit_ms": 0.19799999999999998,
+      "materialize_ms": 7.000100000000001,
+      "total_ms": 12.2687
+    },
+    {
+      "parse_link_ms": 0.4491,
+      "select_patch_ms": 0.0241,
+      "optimize_ms": 4.5217,
+      "create_jit_ms": 0.2437,
+      "materialize_ms": 4.5513,
+      "total_ms": 9.789900000000001
+    }
+  ],
+  "patched_load_trials": [
+    {
+      "parse_link_ms": 0.7303999999999999,
+      "select_patch_ms": 0.0777,
+      "optimize_ms": 2.9762999999999997,
+      "create_jit_ms": 0.1549,
+      "materialize_ms": 4.1445,
+      "total_ms": 8.0838
+    },
+    {
+      "parse_link_ms": 0.45189999999999997,
+      "select_patch_ms": 0.0533,
+      "optimize_ms": 4.2149,
+      "create_jit_ms": 0.2752,
+      "materialize_ms": 5.2474,
+      "total_ms": 10.242700000000001
+    },
+    {
+      "parse_link_ms": 0.8111,
+      "select_patch_ms": 0.0768,
+      "optimize_ms": 3.5687,
+      "create_jit_ms": 0.4485,
+      "materialize_ms": 5.5503,
+      "total_ms": 10.455499999999999
+    },
+    {
+      "parse_link_ms": 0.6386000000000001,
+      "select_patch_ms": 0.2706,
+      "optimize_ms": 3.2906,
+      "create_jit_ms": 0.1733,
+      "materialize_ms": 4.5509,
+      "total_ms": 8.924
+    },
+    {
+      "parse_link_ms": 0.4034,
+      "select_patch_ms": 0.055600000000000004,
+      "optimize_ms": 3.1396,
+      "create_jit_ms": 0.1617,
+      "materialize_ms": 4.1593,
+      "total_ms": 7.9197
+    },
+    {
+      "parse_link_ms": 0.45609999999999995,
+      "select_patch_ms": 0.0594,
+      "optimize_ms": 3.3,
+      "create_jit_ms": 0.1424,
+      "materialize_ms": 4.9981,
+      "total_ms": 8.956000000000001
+    },
+    {
+      "parse_link_ms": 0.5333,
+      "select_patch_ms": 0.056799999999999996,
+      "optimize_ms": 3.5217,
+      "create_jit_ms": 0.2635,
+      "materialize_ms": 5.5496,
+      "total_ms": 9.924900000000001
+    }
+  ],
+  "base_load_median_ms": 9.789900000000001,
+  "patched_load_median_ms": 8.956000000000001,
+  "memory_before_llvm": {
+    "working_set_bytes": 4726784,
+    "private_bytes": 651264,
+    "peak_working_set_bytes": 4726784
+  },
+  "memory_after_llvm": {
+    "working_set_bytes": 10813440,
+    "private_bytes": 8515584,
+    "peak_working_set_bytes": 10813440
+  },
+  "memory_with_two_jits": {
+    "working_set_bytes": 28155904,
+    "private_bytes": 13094912,
+    "peak_working_set_bytes": 28241920
+  },
+  "memory_after_benchmarks": {
+    "working_set_bytes": 30425088,
+    "private_bytes": 17408000,
+    "peak_working_set_bytes": 30425088
+  },
+  "memory_after_jit_disposal": {
+    "working_set_bytes": 30408704,
+    "private_bytes": 17145856,
+    "peak_working_set_bytes": 30425088
+  },
+  "comparisons": [
+    {
+      "name": "base_external_calls",
+      "iterations": 10000,
+      "samples": 3,
+      "aot": {
+        "ns_per_operation": [
+          0.92,
+          0.9,
+          0.9
+        ],
+        "median_ns": 0.9,
+        "min_ns": 0.9,
+        "max_ns": 0.92
+      },
+      "jit": {
+        "ns_per_operation": [
+          1.12,
+          1.12,
+          1.12
+        ],
+        "median_ns": 1.12,
+        "min_ns": 1.12,
+        "max_ns": 1.12
+      },
+      "paired_ratios": [
+        1.2173913043478262,
+        1.2444444444444445,
+        1.2444444444444445
+      ],
+      "median_paired_ratio": 1.2444444444444445,
+      "meaning": "One indirect native boundary per operation; both AOT and JIT use black-boxed function pointers."
+    },
+    {
+      "name": "base_internal_batch",
+      "iterations": 10000,
+      "samples": 3,
+      "aot": {
+        "ns_per_operation": [
+          0.93,
+          0.93,
+          2.11
+        ],
+        "median_ns": 0.93,
+        "min_ns": 0.93,
+        "max_ns": 2.11
+      },
+      "jit": {
+        "ns_per_operation": [
+          0.93,
+          0.92,
+          1.03
+        ],
+        "median_ns": 0.93,
+        "min_ns": 0.92,
+        "max_ns": 1.03
+      },
+      "paired_ratios": [
+        1.0,
+        0.989247311827957,
+        0.4881516587677725
+      ],
+      "median_paired_ratio": 0.989247311827957,
+      "meaning": "One boundary for the entire loop; optimizer can inline internal component calls."
+    },
+    {
+      "name": "patched_external_calls",
+      "iterations": 10000,
+      "samples": 3,
+      "aot": {
+        "ns_per_operation": [
+          1.65,
+          1.13,
+          1.34
+        ],
+        "median_ns": 1.34,
+        "min_ns": 1.13,
+        "max_ns": 1.65
+      },
+      "jit": {
+        "ns_per_operation": [
+          1.35,
+          1.35,
+          1.34
+        ],
+        "median_ns": 1.35,
+        "min_ns": 1.34,
+        "max_ns": 1.35
+      },
+      "paired_ratios": [
+        0.8181818181818182,
+        1.1946902654867257,
+        1.0
+      ],
+      "median_paired_ratio": 1.0,
+      "meaning": "Identical adjusted arithmetic in AOT and transformed JIT; not compared to cheaper unmodified logic."
+    },
+    {
+      "name": "patched_internal_batch",
+      "iterations": 10000,
+      "samples": 3,
+      "aot": {
+        "ns_per_operation": [
+          1.26,
+          1.26,
+          1.26
+        ],
+        "median_ns": 1.26,
+        "min_ns": 1.26,
+        "max_ns": 1.26
+      },
+      "jit": {
+        "ns_per_operation": [
+          1.25,
+          1.26,
+          1.26
+        ],
+        "median_ns": 1.26,
+        "min_ns": 1.25,
+        "max_ns": 1.26
+      },
+      "paired_ratios": [
+        0.9920634920634921,
+        1.0,
+        1.0
+      ],
+      "median_paired_ratio": 1.0,
+      "meaning": "Identical adjusted loop in AOT and transformed JIT; final LLVM optimization may inline handler."
+    }
+  ],
+  "limits": [
+    "Trusted no_std fixture/mod, scalar C boundaries, one OS/CPU, no heap/panic/unwinding/shared state.",
+    "Logical IDs and symbol mappings come from the experimental attribute SDK; only 0..=4 f64 target boundaries are indexed, not arbitrary Rust signatures.",
+    "Calls are synchronous; this experiment has no runtime publication/hot-update protocol.",
+    "DLL timing is this process's first load, not a reboot-cold disk benchmark; load trials reuse warm process/caches.",
+    "AOT uses rustc O3/thin LTO. Retained bitcode bypasses LLVM passes, then LLVM C API runs default<O3>. Pipelines are not identical.",
+    "No performance claim for full games, arbitrary Rust, reference capture, multiplayer or multithreaded workloads."
+  ]
+}

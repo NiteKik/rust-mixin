@@ -1,0 +1,48 @@
+{
+  "targets": {
+    "demo::combat::apply_damage": {
+      "schema": 1,
+      "logical_id": "demo::combat::apply_damage",
+      "symbol": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f",
+      "entry": "__rsmx_entry_08aa4a1cf4c3009dca5ed38f",
+      "arity": 2,
+      "retention_noinline": true
+    },
+    "demo::combat::armor_reduce": {
+      "schema": 1,
+      "logical_id": "demo::combat::armor_reduce",
+      "symbol": "__rsmx_fn_6c5480d415ed2b55da7ba335",
+      "entry": "__rsmx_entry_6c5480d415ed2b55da7ba335",
+      "arity": 2,
+      "retention_noinline": true
+    },
+    "demo::combat::caller": {
+      "schema": 1,
+      "logical_id": "demo::combat::caller",
+      "symbol": "__rsmx_fn_e02ec5709ce5f1a52a6d8b6f",
+      "entry": "__rsmx_entry_e02ec5709ce5f1a52a6d8b6f",
+      "arity": 2,
+      "retention_noinline": true
+    },
+    "demo::combat::two_hits": {
+      "schema": 1,
+      "logical_id": "demo::combat::two_hits",
+      "symbol": "__rsmx_fn_3cb4fc20c82e364a35b1be9f",
+      "entry": "__rsmx_entry_3cb4fc20c82e364a35b1be9f",
+      "arity": 2,
+      "retention_noinline": true
+    }
+  },
+  "handlers": [
+    {
+      "schema": 1,
+      "id": "adjust_damage",
+      "target": "demo::combat::apply_damage",
+      "callee": "demo::combat::armor_reduce",
+      "ordinal": 0,
+      "require_matches": 1,
+      "priority": 0,
+      "symbol": "__rsmx_handler_6da65494c143e50f2b6515bf"
+    }
+  ]
+}

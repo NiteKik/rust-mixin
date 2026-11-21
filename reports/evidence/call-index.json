@@ -1,0 +1,44 @@
+[
+  {
+    "function": "_ZN13retained_game10batch_with17h6ed0ad826b3392fcE",
+    "direct_calls": [
+      "llvm.lifetime.start.p0",
+      "llvm.lifetime.end.p0",
+      "_ZN13retained_game13fixture_batch28_$u7b$$u7b$closure$u7d$$u7d$17h72eb59377f38105aE"
+    ]
+  },
+  {
+    "function": "_ZN13retained_game13fixture_batch28_$u7b$$u7b$closure$u7d$$u7d$17h72eb59377f38105aE",
+    "direct_calls": [
+      "fixture_damage"
+    ]
+  },
+  {
+    "function": "fixture_armor_reduce",
+    "direct_calls": []
+  },
+  {
+    "function": "fixture_batch",
+    "direct_calls": [
+      "_ZN13retained_game10batch_with17h6ed0ad826b3392fcE"
+    ]
+  },
+  {
+    "function": "fixture_damage",
+    "direct_calls": [
+      "fixture_armor_reduce"
+    ]
+  },
+  {
+    "function": "llvm.lifetime.start.p0",
+    "direct_calls": []
+  },
+  {
+    "function": "llvm.lifetime.end.p0",
+    "direct_calls": []
+  },
+  {
+    "function": "mod_adjust_damage",
+    "direct_calls": []
+  }
+]

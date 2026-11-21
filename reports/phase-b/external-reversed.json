@@ -1,0 +1,163 @@
+{
+  "base_unchanged": 16.0,
+  "base_value": 16.0,
+  "call": "demo::combat::apply_damage",
+  "empty_path": true,
+  "game_sha256": "c928b9951e62abed0313edd91f331d6ec6d39d6bfebbc754e41e827b0907ea0f",
+  "index": {
+    "handlers": [
+      {
+        "callee": "demo::combat::armor_reduce",
+        "id": "half_damage",
+        "operation": "modify_call_result",
+        "ordinal": 0,
+        "parameter": null,
+        "priority": 0,
+        "require_matches": 1,
+        "schema": 1,
+        "symbol": "__rsmx_handler_6f072205a065352a85adc84c",
+        "target": "demo::combat::apply_damage"
+      },
+      {
+        "callee": "demo::combat::armor_reduce",
+        "id": "adjust_damage",
+        "operation": "modify_call_result",
+        "ordinal": 0,
+        "parameter": null,
+        "priority": 0,
+        "require_matches": 1,
+        "schema": 1,
+        "symbol": "__rsmx_handler_6da65494c143e50f2b6515bf",
+        "target": "demo::combat::apply_damage"
+      }
+    ],
+    "targets": {
+      "demo::combat::apply_damage": {
+        "arity": 2,
+        "entry": "__rsmx_entry_08aa4a1cf4c3009dca5ed38f",
+        "logical_id": "demo::combat::apply_damage",
+        "retention_noinline": true,
+        "return_hook": {
+          "body": "__rsmx_body_08aa4a1cf4c3009dca5ed38f",
+          "symbol": "__rsmx_return_08aa4a1cf4c3009dca5ed38f",
+          "type_probe": "__rsmx_target_type_08aa4a1cf4c3009dca5ed38f"
+        },
+        "schema": 1,
+        "symbol": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f"
+      },
+      "demo::combat::armor_reduce": {
+        "arity": 2,
+        "entry": "__rsmx_entry_6c5480d415ed2b55da7ba335",
+        "logical_id": "demo::combat::armor_reduce",
+        "retention_noinline": true,
+        "return_hook": {
+          "body": "__rsmx_body_6c5480d415ed2b55da7ba335",
+          "symbol": "__rsmx_return_6c5480d415ed2b55da7ba335",
+          "type_probe": "__rsmx_target_type_6c5480d415ed2b55da7ba335"
+        },
+        "schema": 1,
+        "symbol": "__rsmx_fn_6c5480d415ed2b55da7ba335"
+      },
+      "demo::combat::caller": {
+        "arity": 2,
+        "entry": "__rsmx_entry_e02ec5709ce5f1a52a6d8b6f",
+        "logical_id": "demo::combat::caller",
+        "retention_noinline": true,
+        "return_hook": {
+          "body": "__rsmx_body_e02ec5709ce5f1a52a6d8b6f",
+          "symbol": "__rsmx_return_e02ec5709ce5f1a52a6d8b6f",
+          "type_probe": "__rsmx_target_type_e02ec5709ce5f1a52a6d8b6f"
+        },
+        "schema": 1,
+        "symbol": "__rsmx_fn_e02ec5709ce5f1a52a6d8b6f"
+      },
+      "demo::combat::two_hits": {
+        "arity": 2,
+        "entry": "__rsmx_entry_3cb4fc20c82e364a35b1be9f",
+        "logical_id": "demo::combat::two_hits",
+        "retention_noinline": true,
+        "return_hook": {
+          "body": "__rsmx_body_3cb4fc20c82e364a35b1be9f",
+          "symbol": "__rsmx_return_3cb4fc20c82e364a35b1be9f",
+          "type_probe": "__rsmx_target_type_3cb4fc20c82e364a35b1be9f"
+        },
+        "schema": 1,
+        "symbol": "__rsmx_fn_3cb4fc20c82e364a35b1be9f"
+      }
+    }
+  },
+  "manifest": {
+    "cpu": "x86-64",
+    "inputs": [
+      {
+        "file": "retained_game.bc",
+        "sha256": "c928b9951e62abed0313edd91f331d6ec6d39d6bfebbc754e41e827b0907ea0f"
+      },
+      {
+        "file": "retained_mod.bc",
+        "sha256": "ea02143cf8634adffa9a6f9dc104c816b8e5c2bcb3c08a93d3e95787a9d279ea"
+      }
+    ],
+    "llvm": [
+      21,
+      1,
+      3
+    ],
+    "lowering_flags": [
+      "cargo rustc --release",
+      "--emit=llvm-bc,llvm-ir,link",
+      "-Cno-prepopulate-passes",
+      "-Clto=off",
+      "--cfg=mixin_retained",
+      "-Ctarget-cpu=x86-64"
+    ],
+    "rustc": "rustc 1.92.0 (ded5c06cf 2025-12-08)\nbinary: rustc\ncommit-hash: ded5c06cf21d2b93bffd5d884aa6e96934ee4234\ncommit-date: 2025-12-08\nhost: x86_64-pc-windows-msvc\nrelease: 1.92.0\nLLVM version: 21.1.3",
+    "schema": 1,
+    "triple": "x86_64-pc-windows-msvc"
+  },
+  "mode": "external_mods",
+  "mods": [
+    "artifacts/mods/llvm-half-mod",
+    "artifacts/mods/llvm-handler"
+  ],
+  "patched_value": 4.0,
+  "plan": [
+    {
+      "callee": "demo::combat::armor_reduce",
+      "callee_symbol": "__rsmx_fn_6c5480d415ed2b55da7ba335",
+      "handler_symbol": "__rsmx_handler_6f072205a065352a85adc84c",
+      "id": "half_damage",
+      "matches": 1,
+      "operation": "modify_call_result",
+      "ordinal": 0,
+      "parameter": null,
+      "priority": 0,
+      "target": "demo::combat::apply_damage",
+      "target_symbol": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f",
+      "value_type": "f64"
+    },
+    {
+      "callee": "demo::combat::armor_reduce",
+      "callee_symbol": "__rsmx_fn_6c5480d415ed2b55da7ba335",
+      "handler_symbol": "__rsmx_handler_6da65494c143e50f2b6515bf",
+      "id": "adjust_damage",
+      "matches": 1,
+      "operation": "modify_call_result",
+      "ordinal": 0,
+      "parameter": null,
+      "priority": 0,
+      "target": "demo::combat::apply_damage",
+      "target_symbol": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f",
+      "value_type": "f64"
+    }
+  ],
+  "schema": 2,
+  "timing": {
+    "create_jit_ms": 0.4398,
+    "materialize_ms": 8.0272,
+    "optimize_ms": 5.250900000000001,
+    "parse_link_ms": 1.0719,
+    "select_patch_ms": 0.17129999999999998,
+    "total_ms": 15.2515
+  }
+}

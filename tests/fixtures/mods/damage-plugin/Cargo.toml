@@ -1,0 +1,10 @@
+[package]
+name = "llvm-damage-plugin"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+
+[dependencies]
+llvm-fixture = { path = "../../combat-game" }
+mixin-sdk = { path = "../../../../crates/mixin-sdk" }

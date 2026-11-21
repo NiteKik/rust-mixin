@@ -1,0 +1,13 @@
+{
+  "cpu": [
+    {
+      "Name": "13th Gen Intel(R) Core(TM) i7-13620H",
+      "NumberOfCores": 10,
+      "NumberOfLogicalProcessors": 16
+    }
+  ],
+  "windows_version": "10.0.26300.0",
+  "measured_cycles_per_run": 64,
+  "runs_per_component": 3,
+  "background": true
+}

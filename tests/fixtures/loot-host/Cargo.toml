@@ -1,0 +1,13 @@
+[package]
+name = "mixin-loot-host"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+
+[dependencies]
+mixin-runtime = { path = "../../../crates/mixin-runtime" }
+
+[[bin]]
+name = "loot-game"
+path = "src/main.rs"

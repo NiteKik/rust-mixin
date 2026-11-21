@@ -1,0 +1,13 @@
+[
+  {
+    "id": "adjust_damage",
+    "target": "demo::combat::apply_damage",
+    "target_symbol": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f",
+    "callee": "demo::combat::armor_reduce",
+    "callee_symbol": "__rsmx_fn_6c5480d415ed2b55da7ba335",
+    "handler_symbol": "__rsmx_handler_6da65494c143e50f2b6515bf",
+    "ordinal": 0,
+    "matches": 1,
+    "priority": 0
+  }
+]

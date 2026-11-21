@@ -1,0 +1,7 @@
+/target/
+/work/
+/dist/
+/artifacts/
+/reports/current/
+/.tools/
+*.pdb

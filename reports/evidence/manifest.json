@@ -1,0 +1,40 @@
+﻿{
+    "schema":  1,
+    "rustc":  "rustc 1.92.0 (ded5c06cf 2025-12-08)\nbinary: rustc\ncommit-hash: ded5c06cf21d2b93bffd5d884aa6e96934ee4234\ncommit-date: 2025-12-08\nhost: x86_64-pc-windows-msvc\nrelease: 1.92.0\nLLVM version: 21.1.3",
+    "llvm":  [
+                 21,
+                 1,
+                 3
+             ],
+    "triple":  "x86_64-pc-windows-msvc",
+    "cpu":  "x86-64",
+    "lowering_flags":  [
+                           "--edition=2024",
+                           "--crate-type=lib",
+                           "--emit=llvm-bc,llvm-ir",
+                           "-C",
+                           "opt-level=3",
+                           "-C",
+                           "no-prepopulate-passes",
+                           "-C",
+                           "codegen-units=1",
+                           "-C",
+                           "panic=abort",
+                           "-C",
+                           "overflow-checks=off",
+                           "-C",
+                           "target-cpu=x86-64",
+                           "--out-dir",
+                           "D:\\桌面\\rust-mixin\\experiments\\llvm-mixin\\artifacts"
+                       ],
+    "inputs":  [
+                   {
+                       "file":  "retained_game.bc",
+                       "sha256":  "0e9caf2726a878f40894c827d46424f1da916aa91a0183540c154f2c1f030cde"
+                   },
+                   {
+                       "file":  "retained_mod.bc",
+                       "sha256":  "375ee32e71cdfb6587a7ae04c02ad793e28fb23189af461a1946a85e6f2abbce"
+                   }
+               ]
+}

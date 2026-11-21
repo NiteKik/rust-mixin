@@ -1,0 +1,10 @@
+[package]
+name = "llvm-scalar-game"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+
+[dependencies]
+example-return-types = { path = "../return-types" }
+mixin-sdk = { path = "../../../crates/mixin-sdk" }

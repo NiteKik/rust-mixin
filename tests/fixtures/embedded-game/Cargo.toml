@@ -1,0 +1,21 @@
+[package]
+name = "mixin-embedded-game"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+
+[features]
+game-host = []
+embedded-bitcode = ["game-host"]
+embedded-llvm = ["game-host"]
+
+[[bin]]
+name = "game"
+path = "src/main.rs"
+required-features = ["game-host"]
+
+[dependencies]
+libloading = "0.8"
+llvm-fixture = { path = "../combat-game" }
+mixin-runtime = { path = "../../../crates/mixin-runtime" }

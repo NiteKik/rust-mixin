@@ -1,0 +1,96 @@
+[
+  {
+    "function": "_ZN12llvm_fixture10batch_with17hb5490f161783ce26E",
+    "direct_calls": [
+      "llvm.lifetime.start.p0",
+      "llvm.lifetime.end.p0",
+      "_ZN12llvm_fixture13fixture_batch28_$u7b$$u7b$closure$u7d$$u7d$17he84da5e46cb20197E"
+    ]
+  },
+  {
+    "function": "_ZN12llvm_fixture13fixture_batch28_$u7b$$u7b$closure$u7d$$u7d$17he84da5e46cb20197E",
+    "direct_calls": [
+      "_ZN12llvm_fixture14fixture_damage17hef4468a5d7332544E"
+    ]
+  },
+  {
+    "function": "_ZN12llvm_fixture14fixture_damage17hef4468a5d7332544E",
+    "direct_calls": [
+      "__rsmx_fn_08aa4a1cf4c3009dca5ed38f"
+    ]
+  },
+  {
+    "function": "_ZN12llvm_fixture20fixture_armor_reduce17hafa8a93c603f5ad8E",
+    "direct_calls": [
+      "__rsmx_fn_6c5480d415ed2b55da7ba335"
+    ]
+  },
+  {
+    "function": "__rsmx_entry_08aa4a1cf4c3009dca5ed38f",
+    "direct_calls": [
+      "__rsmx_fn_08aa4a1cf4c3009dca5ed38f"
+    ]
+  },
+  {
+    "function": "__rsmx_entry_3cb4fc20c82e364a35b1be9f",
+    "direct_calls": [
+      "__rsmx_fn_3cb4fc20c82e364a35b1be9f"
+    ]
+  },
+  {
+    "function": "__rsmx_entry_6c5480d415ed2b55da7ba335",
+    "direct_calls": [
+      "__rsmx_fn_6c5480d415ed2b55da7ba335"
+    ]
+  },
+  {
+    "function": "__rsmx_entry_e02ec5709ce5f1a52a6d8b6f",
+    "direct_calls": [
+      "__rsmx_fn_e02ec5709ce5f1a52a6d8b6f"
+    ]
+  },
+  {
+    "function": "__rsmx_fn_08aa4a1cf4c3009dca5ed38f",
+    "direct_calls": [
+      "__rsmx_fn_6c5480d415ed2b55da7ba335"
+    ]
+  },
+  {
+    "function": "__rsmx_fn_3cb4fc20c82e364a35b1be9f",
+    "direct_calls": [
+      "__rsmx_fn_6c5480d415ed2b55da7ba335",
+      "__rsmx_fn_6c5480d415ed2b55da7ba335"
+    ]
+  },
+  {
+    "function": "__rsmx_fn_6c5480d415ed2b55da7ba335",
+    "direct_calls": []
+  },
+  {
+    "function": "__rsmx_fn_e02ec5709ce5f1a52a6d8b6f",
+    "direct_calls": [
+      "__rsmx_fn_08aa4a1cf4c3009dca5ed38f"
+    ]
+  },
+  {
+    "function": "fixture_batch",
+    "direct_calls": [
+      "_ZN12llvm_fixture10batch_with17hb5490f161783ce26E"
+    ]
+  },
+  {
+    "function": "llvm.lifetime.start.p0",
+    "direct_calls": []
+  },
+  {
+    "function": "llvm.lifetime.end.p0",
+    "direct_calls": []
+  },
+  {
+    "function": "__rsmx_handler_6da65494c143e50f2b6515bf",
+    "direct_calls": [
+      "llvm.lifetime.start.p0",
+      "llvm.lifetime.end.p0"
+    ]
+  }
+]

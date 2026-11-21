@@ -1,0 +1,45 @@
+[
+  {
+    "query": "rust runtime mixin",
+    "total": 1,
+    "items": [
+      {
+        "full_name": "Konvt/lurti",
+        "description": "Lua Runtime Type Infomation, a runtime type system with metaclasses, multiple inheritance, abstract classes, method mixins, and Rust-style errors.",
+        "html_url": "https://github.com/Konvt/lurti"
+      }
+    ]
+  },
+  {
+    "query": "rust mixin LLVM",
+    "total": 0,
+    "items": []
+  },
+  {
+    "query": "rust bytecode injection",
+    "total": 2,
+    "items": [
+      {
+        "full_name": "ShkodnikAI/Metalogos-",
+        "description": "Security-by-design programming language in Rust: SQL injection, XSS and secret leaks are compile-time errors. Tree-walking interpreter, bytecode VM, static security audit, local generative AI.",
+        "html_url": "https://github.com/ShkodnikAI/Metalogos-"
+      },
+      {
+        "full_name": "RedexDev/HashLoader",
+        "description": "HashLoader — Mod loader and bytecode injection system for HashLink JIT (.hlmod) - HAXE",
+        "html_url": "https://github.com/RedexDev/HashLoader"
+      }
+    ]
+  },
+  {
+    "query": "rust hot patch function",
+    "total": 1,
+    "items": [
+      {
+        "full_name": "humdrum00001010/hot-rust",
+        "description": "Native function-level hot-patch engine for Rust (Live++-style prologue patching, -Zpatchable-function-entry)",
+        "html_url": "https://github.com/humdrum00001010/hot-rust"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[package]
+name = "llvm-head-mod"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+mixin-sdk = { package = "mixin-sdk", path = "../../../../crates/mixin-sdk" }

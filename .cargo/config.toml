@@ -1,0 +1,9 @@
+[build]
+rustflags = ["--check-cfg=cfg(mixin_retained)"]
+
+[alias]
+build-game = ["run", "--quiet", "--release", "--locked", "-p", "demo-build", "--", "game"]
+build-mod = ["run", "--quiet", "--release", "--locked", "-p", "demo-build", "--", "mod"]
+build-mod-before = ["build-mod", "video-before"]
+build-mod-inside = ["build-mod", "video-inside"]
+build-mod-after = ["build-mod", "video-after"]
